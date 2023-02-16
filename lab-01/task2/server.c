@@ -4,7 +4,6 @@
 #include <stdio.h>
 #define SOCK_NAME "SOCK_FILE"
 
-char buf[] = "Hello there!\n";
 
 
 int main() 
@@ -25,13 +24,22 @@ int main()
         perror("bind");
         exit(1);
     }
-
+    char buf[1024];
+    
     while(1)
     {
-        if (recvfrom(fd, buf, 1024, 0, &srvr_name, sizeof(srvr_name)) == -1)
+        int bytes_read = recvfrom(fd, buf, 1024, 0, NULL, NULL);
+        if (bytes_read == -1)
         {
+            
+            printf(buf);
             perror("recvfrom");
             exit(1);
+        }
+        else
+        {
+            buf[bytes_read] = '\0';
+            printf(buf);
         }
     }
 
