@@ -14,6 +14,13 @@
 #define BUF_SIZE        16
 #define MAX_LINE        256
 
+static void set_sockaddr(struct sockaddr_in *addr)
+{
+	bzero((char *)addr, sizeof(struct sockaddr_in));
+	addr->sin_family = AF_INET;
+	addr->sin_addr.s_addr = INADDR_ANY;
+	addr->sin_port = htons(DEFAULT_PORT);
+}
 
 int main()
 {
@@ -32,24 +39,13 @@ int main()
 		exit(1);
 	}
 
-	for (;;) {
-		printf("input: ");
-		fgets(buf, sizeof(buf), stdin);
-		c = strlen(buf) - 1;
-		buf[c] = '\0';
-		write(sockfd, buf, c + 1);
+	char client_buf[2048];
+	pid_t pid = getpid();
+    sprintf(client_buf, "%d\n\0", pid);
+	printf(client_buf);
+	write(sockfd, client_buf, c + 1);
 
-		bzero(buf, sizeof(buf));
-		while (errno != EAGAIN
-		       && (n = read(sockfd, buf, sizeof(buf))) > 0) {
-			printf("echo: %s\n", buf);
-			bzero(buf, sizeof(buf));
-
-			c -= n;
-			if (c <= 0) {
-				break;
-			}
-		}
-	}
+	read(sockfd, client_buf, strlen(client_buf));
+	printf("echo: %s\n", client_buf);
 	close(sockfd);
 }
