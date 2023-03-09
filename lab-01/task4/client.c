@@ -58,7 +58,6 @@ int main()
 		exit(1);
 	}
 
-	// printf("fd: %d, server: %d, size: %ld", fd, (struct sockaddr*)&server, sizeof(server));
 	if (connect(fd, (struct sockaddr*)&server, sizeof(server)) == -1)
 	{
 		perror("connect failed");
@@ -72,7 +71,7 @@ int main()
 			perror("send() failed\n");
 		}
 
-		printf("Child sent: %s\n", send_msg);
+		printf("Child pid: %s\n", send_msg);
 		memset(recv_msg, 0, BUF_SIZE);
 
 		if((bytes = recv(fd, recv_msg, BUF_SIZE, 0)) > 0 )

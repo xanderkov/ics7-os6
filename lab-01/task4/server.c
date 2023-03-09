@@ -10,6 +10,7 @@
 #include <netinet/in.h>
 #include <sys/select.h>
 #include <sys/time.h>
+#include <sys/epoll.h>
 
 #define SOCK_NAME "socket"
 #define SOCK_NAME_CLIENT "socket2"
@@ -31,7 +32,7 @@ int main(void)
     socklen_t client_len = sizeof(client);
     char buf[1024];
     char msg[100];
-    sprintf(msg, " Greetings from server with pid %d", getpid());
+    sprintf(msg, " Server pid: pid %d", getpid());
     int  bytes;
 
     if ((fd = socket(AF_INET, SOCK_STREAM, 0)) == -1)

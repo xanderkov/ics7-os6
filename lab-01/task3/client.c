@@ -32,11 +32,12 @@ int main()
 
     pid_t pid = getpid();
 
-    char buf[1024];
+    char buf[1024], child_buf[1024];
+    char ret[2048];
 
-    sprintf(buf, "%d\n", pid);
-
-    if (sendto(fd, buf, strlen(buf) + 1, 0, &srvr_value, sizeof(srvr_value)) == -1)
+    sprintf(child_buf, "%d\n\0", pid);
+    
+    if (sendto(fd, child_buf, strlen(child_buf) + 1, 0, &srvr_value, sizeof(srvr_value)) == -1)
     {
         perror("sendto");
         exit(1);
@@ -53,7 +54,8 @@ int main()
     else
     {
         buf[bytes_read] = '\0';
-        printf(buf);
+        sprintf(ret, "Client: %s + Server: %s", child_buf, buf);
+        printf(ret);
     }
     unlink(SOCK_CLIENT);
     close(fd);

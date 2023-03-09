@@ -27,6 +27,15 @@ int main()
         exit(1);
     }
     char buf[1024];
+
+    pid_t pid_srv = getpid();
+
+    char buf_srv[1024];
+
+    sprintf(buf_srv, "%d\n", pid_srv);
+
+    printf("Server pid: ");
+    printf(buf_srv);
     
     while (1)
     {
@@ -41,11 +50,11 @@ int main()
         }
         else
         {
-            buf[bytes_read] = '\0';
+            buf[bytes_read] = '\n\0';
             printf(buf);
         }
 
-        if (sendto(fd, buf, bytes_read, 0, &client_name, sizeof(client_name)) == -1)
+        if (sendto(fd, buf_srv, strlen(buf_srv) + 1, 0, &client_name, sizeof(client_name)) == -1)
         {
             perror("sendto");
             exit(1);
