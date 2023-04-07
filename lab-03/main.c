@@ -6,7 +6,7 @@
 #include <linux/path.h>
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("YURA");
+MODULE_AUTHOR("Alexander");
 
 static int __init my_module_init(void) {
     struct task_struct *task = &init_task;
