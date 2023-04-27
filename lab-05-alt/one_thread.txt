@@ -1,0 +1,254 @@
+
+CMDLINE:
+./app.exe
+
+FD:
+0 -> /dev/pts/1/cmdline
+1 -> /dev/pts/1/cmdline
+2 -> /dev/pts/1/cmdline
+
+ENVIRON:
+SHELL=/bin/bash
+SESSION_MANAGER=local/ani-HKF-WXX:@/tmp/.ICE-unix/1333,unix/ani-HKF-WXX:/tmp/.ICE-unix/1333
+QT_ACCESSIBILITY=1
+COLORTERM=truecolor
+XDG_CONFIG_DIRS=/etc/xdg/xdg-cinnamon:/etc/xdg
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+LANGUAGE=en_US
+LC_ADDRESS=ru_RU.UTF-8
+LC_NAME=ru_RU.UTF-8
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+DESKTOP_SESSION=cinnamon
+LC_MONETARY=ru_RU.UTF-8
+GTK_MODULES=gail:atk-bridge
+XDG_SEAT=seat0
+PWD=/home/ani/os/lab_04/prog
+LOGNAME=ani
+XDG_SESSION_DESKTOP=cinnamon
+QT_QPA_PLATFORMTHEME=qt5ct
+XDG_SESSION_TYPE=x11
+GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+XAUTHORITY=/home/ani/.Xauthority
+XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/ani
+GDM_LANG=en_US
+HOME=/home/ani
+LC_PAPER=ru_RU.UTF-8
+LANG=en_US.UTF-8
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+XDG_CURRENT_DESKTOP=X-Cinnamon
+VTE_VERSION=6800
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/56131f54_0824_4097_83a4_0d46565d302f
+LESSCLOSE=/usr/bin/lesspipe %s %s
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+LC_IDENTIFICATION=ru_RU.UTF-8
+GTK_OVERLAY_SCROLLING=1
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=ani
+GNOME_TERMINAL_SERVICE=:1.87
+DISPLAY=:0
+SHLVL=1
+LC_TELEPHONE=ru_RU.UTF-8
+LC_MEASUREMENT=ru_RU.UTF-8
+XDG_VTNR=7
+DESKTOP_AUTOSTART_ID=102af3556c54562e84168133288620681700000013330036
+XDG_SESSION_ID=c2
+XDG_RUNTIME_DIR=/run/user/1000
+GTK3_MODULES=xapp-gtk3-module
+XDG_DATA_DIRS=/usr/share/cinnamon:/usr/share/gnome:/home/ani/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+GDMSESSION=cinnamon
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+LC_NUMERIC=ru_RU.UTF-8
+OLDPWD=/home/ani
+_=./app.exe
+
+STAT: 
+(1) pid  '8343'
+(2) comm '(app.exe)'
+(3) state  'S'
+(4) ppid  '5947'
+(5) pgrp  '8343'
+(6) session  '5947'
+(7) tty_nr  '34817'
+(8) tpgid  '8343'
+(9) flags  '4194304'
+(10) minflt  '7501'
+(11) cminflt  '0'
+(12) majflt  '0'
+(13) cmajflt  '0'
+(14) utime  '7'
+(15) stime  '1'
+(16) cutime  '0'
+(17) cstime  '0'
+(18) priority  '20'
+(19) nice  '0'
+(20) num_threads  '1'
+(21) itrealvalue  '0'
+(22) starttime  '255229'
+(23) vsize  '23318528'
+(24) rss  '5038'
+(25) rsslim  '18446744073709551615'
+(26) startcode  '94145015492608'
+(27) endcode  '94145015549657'
+(28) startstack  '140723942518544'
+(29) kstkesp  '0'
+(30) kstkeip  '0'
+(31) signal  '0'
+(32) blocked  '0'
+(33) sigignore  '0'
+(34) sigcatch  '0'
+(35) wchan  '1'
+(36) nswap  '0'
+(37) cnswap  '0'
+(38) exit_signal  '17'
+(39) processor  '8'
+(40) rt_priority  '0'
+(41) policy  '0'
+(42) delayacct_blkio_ticks  '0'
+(43) guest_time  '0'
+(44) cguest_time  '0'
+(45) start_data  '94145015580944'
+(46) end_data  '94145015582752'
+(47) start_brk  '94145017167872'
+(48) arg_start  '140723942519525'
+(49) arg_end  '140723942519535'
+(50) env_start  '140723942519535'
+(51) env_end  '140723942522862'
+(52) exit_code  '0
+LC_ADDRESS=ru_RU.UTF-8
+LC_NAME=ru_RU.UTF-8
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+DESKTOP_SESSION=cinnamon
+LC_MONETARY=ru_RU.UTF-8
+GTK_MODULES=gail:atk-bridge
+XDG_SEAT=seat0
+PWD=/home/ani/os/lab_04/prog
+LOGNAME=ani
+XDG_SESSION_DESKTOP=cinnamon
+QT_QPA_PLATFORMTHEME=qt5ct
+XDG_SESSION_TYPE=x11
+GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+XAUTHORITY=/home/ani/.Xauthority
+XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/ani
+GDM_LANG=en_US
+HOME=/home/ani
+LC_PAPER=ru_RU.UTF-8
+LANG=en_US.UTF-8
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+XDG_CURRENT_DESKTOP=X-Cinnamon
+VTE_VERSION=6800
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/56131f54_0824_4097_83a4_0d46565d302f
+LESSCLOSE=/usr/bin/lesspipe'
+size     %s  (1)
+resident %s
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+LC_IDENTIFICATION=ru_RU.UTF-8
+GTK_OVERLAY_SCROLLING=1
+LESSOPEN=|  (2)
+shared   /usr/bin/lesspipe  (3)
+text     %s
+USER=ani
+GNOME_TERMINAL_SERVICE=:1.87
+DISPLAY=:0
+SHLVL=1
+LC_TELEPHONE=ru_RU.UTF-8
+LC_MEASUREMENT=ru_RU.UTF-8
+XDG_VTNR=7
+DESKTOP_AUTOSTART_ID=102af3556c54562e84168133288620681700000013330036
+XDG_SESSION_ID=c2
+XDG_RUNTIME_DIR=/run/user/1000
+GTK3_MODULES=xapp-gtk3-module
+XDG_DATA_DIRS=/usr/share/cinnamon:/usr/share/gnome:/home/ani/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+GDMSESSION=cinnamon
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+LC_NUMERIC=ru_RU.UTF-8
+OLDPWD=/home/ani
+_=./app.exe
+  (4)
+
+STATM: 
+size     5693  (1)
+resident 5038  (2)
+shared   826  (3)
+text     14  (4)
+lib      0  (5)
+data     4260  (6)
+dt       0
+  (7)
+
+CWD:
+/home/ani/Desktop/os/lab_04/prog
+
+EXE:
+/home/ani/Desktop/os/lab_04/prog/app.exe
+
+MAPS:
+559fd8348000-559fd834b000 r--p 00000000 103:08 18351622                  /home/ani/Desktop/os/lab_04/prog/app.exe
+559fd834b000-559fd8359000 r-xp 00003000 103:08 18351622                  /home/ani/Desktop/os/lab_04/prog/app.exe
+559fd8359000-559fd835f000 r--p 00011000 103:08 18351622                  /home/ani/Desktop/os/lab_04/prog/app.exe
+559fd8360000-559fd8361000 r--p 00017000 103:08 18351622                  /home/ani/Desktop/os/lab_04/prog/app.exe
+559fd8361000-559fd8362000 rw-p 00018000 103:08 18351622                  /home/ani/Desktop/os/lab_04/prog/app.exe
+559fd8362000-559fd8365000 rw-p 00000000 00:00 0 
+559fd84e4000-559fd9544000 rw-p 00000000 00:00 0                          [heap]
+7f89095c2000-7f89095c6000 rw-p 00000000 00:00 0 
+7f89095c6000-7f89095d4000 r--p 00000000 103:08 12328933                  /usr/lib/x86_64-linux-gnu/libm.so.6
+7f89095d4000-7f8909650000 r-xp 0000e000 103:08 12328933                  /usr/lib/x86_64-linux-gnu/libm.so.6
+7f8909650000-7f89096ab000 r--p 0008a000 103:08 12328933                  /usr/lib/x86_64-linux-gnu/libm.so.6
+7f89096ab000-7f89096ac000 r--p 000e4000 103:08 12328933                  /usr/lib/x86_64-linux-gnu/libm.so.6
+7f89096ac000-7f89096ad000 rw-p 000e5000 103:08 12328933                  /usr/lib/x86_64-linux-gnu/libm.so.6
+7f89096ad000-7f89096d5000 r--p 00000000 103:08 12328236                  /usr/lib/x86_64-linux-gnu/libc.so.6
+7f89096d5000-7f890986a000 r-xp 00028000 103:08 12328236                  /usr/lib/x86_64-linux-gnu/libc.so.6
+7f890986a000-7f89098c2000 r--p 001bd000 103:08 12328236                  /usr/lib/x86_64-linux-gnu/libc.so.6
+7f89098c2000-7f89098c6000 r--p 00214000 103:08 12328236                  /usr/lib/x86_64-linux-gnu/libc.so.6
+7f89098c6000-7f89098c8000 rw-p 00218000 103:08 12328236                  /usr/lib/x86_64-linux-gnu/libc.so.6
+7f89098c8000-7f89098d5000 rw-p 00000000 00:00 0 
+7f89098d5000-7f89098d8000 r--p 00000000 103:08 12328590                  /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7f89098d8000-7f89098ef000 r-xp 00003000 103:08 12328590                  /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7f89098ef000-7f89098f3000 r--p 0001a000 103:08 12328590                  /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7f89098f3000-7f89098f4000 r--p 0001d000 103:08 12328590                  /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7f89098f4000-7f89098f5000 rw-p 0001e000 103:08 12328590                  /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7f89098f5000-7f890998f000 r--p 00000000 103:08 12329413                  /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+7f890998f000-7f8909a9f000 r-xp 0009a000 103:08 12329413                  /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+7f8909a9f000-7f8909b0e000 r--p 001aa000 103:08 12329413                  /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+7f8909b0e000-7f8909b19000 r--p 00218000 103:08 12329413                  /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+7f8909b19000-7f8909b1c000 rw-p 00223000 103:08 12329413                  /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+7f8909b1c000-7f8909b1f000 rw-p 00000000 00:00 0 
+7f8909b31000-7f8909b33000 rw-p 00000000 00:00 0 
+7f8909b33000-7f8909b35000 r--p 00000000 103:08 12327845                  /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7f8909b35000-7f8909b5f000 r-xp 00002000 103:08 12327845                  /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7f8909b5f000-7f8909b6a000 r--p 0002c000 103:08 12327845                  /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7f8909b6b000-7f8909b6d000 r--p 00037000 103:08 12327845                  /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7f8909b6d000-7f8909b6f000 rw-p 00039000 103:08 12327845                  /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7ffcd898f000-7ffcd89b0000 rw-p 00000000 00:00 0                          [stack]
+7ffcd89ec000-7ffcd89f0000 r--p 00000000 00:00 0                          [vvar]
+7ffcd89f0000-7ffcd89f2000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
+
+
+IO:
+rchar: 1076974
+wchar: 30588
+syscr: 298
+syscw: 3788
+read_bytes: 0
+write_bytes: 0
+cancelled_write_bytes: 0
+
+
+COMM:
+app.exe
+
+
+ROOT:
+/
+
+TASK:
+.
+..
+8343
