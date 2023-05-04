@@ -4,7 +4,7 @@
 #include <linux/vmalloc.h>
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Kirill Livanov");
+MODULE_AUTHOR("Kovel Alexander");
 
 #define COOKIE_POT_SIZE PAGE_SIZE
 #define FILENAME "fortuneFile"
@@ -22,11 +22,11 @@ static int readInd = 0;
 static int writeInd = 0;
 
 static void freeMemory(void) {
-  if (fortuneLink != NULL) remove_proc_entry(SYMLINK, NULL);
-
   if (fortuneFile != NULL) remove_proc_entry(FILENAME, NULL);
 
   if (fortuneDir != NULL) remove_proc_entry(DIRNAME, NULL);
+
+  if (fortuneLink != NULL) remove_proc_entry(SYMLINK, NULL);
 
   vfree(cookiePot);
 }
@@ -42,7 +42,8 @@ static int fortuneRelease(struct inode *spInode, struct file *spFile) {
 }
 
 static ssize_t fortuneWrite(struct file *file, const char __user *buf,
-                            size_t len, loff_t *fPos) {
+                            size_t len, loff_t *fPos) 
+{
   printk(KERN_INFO "fortune: write called\n");
 
   if (len > COOKIE_POT_SIZE - writeInd + 1) {
@@ -99,6 +100,14 @@ static int __init md_init(void) {
 
   memset(cookiePot, 0, COOKIE_POT_SIZE);
 
+  if ((fortuneFile = proc_create(FILENAME, 0666, NULL, &fops)) == NULL) {
+    printk(KERN_ERR "fortune: create file err\n");
+    freeMemory();
+
+    return -ENOMEM;
+  }
+
+
   if ((fortuneDir = proc_mkdir(DIRNAME, NULL)) == NULL) {
     printk(KERN_ERR "fortune: create dir err\n");
     freeMemory();
@@ -106,12 +115,6 @@ static int __init md_init(void) {
     return -ENOMEM;
   }
 
-  if ((fortuneFile = proc_create(FILENAME, 0666, NULL, &fops)) == NULL) {
-    printk(KERN_ERR "fortune: create file err\n");
-    freeMemory();
-
-    return -ENOMEM;
-  }
 
   if ((fortuneLink = proc_symlink(SYMLINK, NULL, DIRNAME)) == NULL) {
     printk(KERN_ERR "fortune: create link err\n");

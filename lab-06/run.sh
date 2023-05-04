@@ -1,5 +1,5 @@
 #!/bin/bash
-set -Eeuxo pipefail
+# set -Eeuxo pipefail
 
 make all
 sudo insmod fortune.ko
@@ -9,7 +9,7 @@ sudo dmesg | grep fortune
 
 echo "12345" > /proc/fortuneFile
 echo "gfhg" > /proc/fortuneFile
-echo "5 kf de vvj" > /proc/fortuneFile
+echo "chto-to" > /proc/fortuneFile
 
 cat /proc/fortuneFile
 cat /proc/fortuneFile
