@@ -28,17 +28,17 @@ static void myfs_put_super(struct super_block * sb)
 
 static struct super_operations const myfs_super_ops = 
 {
-	.put_super = myfs_put_super, // вызывается когда используется unmount
-	.statfs = simple_statfs, // вызывается, когда система опрашивает характеристики ФС
-	.drop_inode = generic_delete_inode, // отключает алгоритм кэширования
+	.put_super = myfs_put_super,
+	.statfs = simple_statfs, 
+	.drop_inode = generic_delete_inode, 
 };
 
 static int myfs_fill_sb(struct super_block *sb, void *data, int silent) // 
 {
     struct inode *root = NULL;
-    sb->s_blocksize = PAGE_SIZE; // размер страниц в системе
-    sb->s_blocksize_bits = PAGE_SHIFT; // сдвиг до номера страницы в структуре
-    sb->s_magic = MYFS_MAGIC_NUMBER; // число для проверки корректного монтирования
+    sb->s_blocksize = PAGE_SIZE; 
+    sb->s_blocksize_bits = PAGE_SHIFT; 
+    sb->s_magic = MYFS_MAGIC_NUMBER; 
     sb->s_op = &myfs_super_ops;
     root = new_inode(sb); 
     if (!root)
@@ -46,9 +46,9 @@ static int myfs_fill_sb(struct super_block *sb, void *data, int silent) //
         printk(KERN_ERR "MYFS inode allocation failed !\n");
         return -ENOMEM;
     }
-    root->i_mode = S_IFDIR | 0755; // маска S_IFDIR говорит о создании каталога, SIFDIR - режим доступа как к каталогу
-    root->i_op = &simple_dir_inode_operations; // готовая структура
-    root->i_fop = &simple_dir_operations; // готовая структура
+    root->i_mode = S_IFDIR | 0755; 
+    root->i_op = &simple_dir_inode_operations; 
+    root->i_fop = &simple_dir_operations; 
     sb->s_root = d_make_root(root); //
     if (!sb->s_root)
     {
@@ -62,7 +62,7 @@ static int myfs_fill_sb(struct super_block *sb, void *data, int silent) //
 static struct dentry *my_mount(struct file_system_type *type, int flags, char const *dev, void *data)
 {
     struct dentry* const root_dentry = mount_nodev(type,  flags,  data, myfs_fill_sb);
-    if (IS_ERR(root_dentry)) // стоит ли воспринимать структуру как ошибочную
+    if (IS_ERR(root_dentry)) 
         printk(KERN_ERR "MYFS mounting failed !\n");
     else 
         printk(KERN_DEBUG "MYFS mounted!\n");
