@@ -19,7 +19,7 @@ MODULE_AUTHOR("Kovel Alexander");
 static struct kmem_cache *cache = NULL;
 static void **cache_mem_area = NULL;
 
-# define MYFS_MAGIC_NUMBER 0x13131313
+# define MYFS_MAGIC_NUMBER 0x66999666
 
 static void myfs_put_super(struct super_block * sb)
 {
@@ -33,6 +33,7 @@ static struct super_operations const myfs_super_ops =
 	.drop_inode = generic_delete_inode, 
 };
 
+
 static int myfs_fill_sb(struct super_block *sb, void *data, int silent) // 
 {
     struct inode *root = NULL;
@@ -40,6 +41,7 @@ static int myfs_fill_sb(struct super_block *sb, void *data, int silent) //
     sb->s_blocksize_bits = PAGE_SHIFT; 
     sb->s_magic = MYFS_MAGIC_NUMBER; 
     sb->s_op = &myfs_super_ops;
+    
     root = new_inode(sb); 
     if (!root)
     {
@@ -48,8 +50,9 @@ static int myfs_fill_sb(struct super_block *sb, void *data, int silent) //
     }
     root->i_mode = S_IFDIR | 0755; 
     root->i_op = &simple_dir_inode_operations; 
-    root->i_fop = &simple_dir_operations; 
-    sb->s_root = d_make_root(root); //
+    root->i_fop = &simple_dir_operations;
+    root->i_ino = 99999; 
+    sb->s_root = d_make_root(root);
     if (!sb->s_root)
     {
         printk(KERN_ERR " MYFS root creation failed !\n");
@@ -61,7 +64,7 @@ static int myfs_fill_sb(struct super_block *sb, void *data, int silent) //
 
 static struct dentry *my_mount(struct file_system_type *type, int flags, char const *dev, void *data)
 {
-    struct dentry* const root_dentry = mount_nodev(type,  flags,  data, myfs_fill_sb);
+    struct dentry* const root_dentry = mount_nodev(type, flags,  data, myfs_fill_sb);
     if (IS_ERR(root_dentry)) 
         printk(KERN_ERR "MYFS mounting failed !\n");
     else 
