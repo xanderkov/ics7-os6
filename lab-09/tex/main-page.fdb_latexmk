@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber main-page"] 1685012892 "main-page.bcf" "main-page.bbl" "main-page" 1685012938
-  "main-page.bcf" 1685012938 105727 9905a3b73767b2718fa4474b0c63857a "pdflatex"
+["biber main-page"] 1685013764 "main-page.bcf" "main-page.bbl" "main-page" 1685014045
+  "main-page.bcf" 1685014044 105727 9905a3b73767b2718fa4474b0c63857a "pdflatex"
   (generated)
   "main-page.bbl"
   "main-page.blg"
-["pdflatex"] 1685012935 "/home/xander/Documents/bmstu/ics7-os6/lab-09/tex/main-page.tex" "main-page.pdf" "main-page" 1685012938
+["pdflatex"] 1685014042 "/home/xander/Documents/bmstu/ics7-os6/lab-09/tex/main-page.tex" "main-page.pdf" "main-page" 1685014045
   "/etc/texmf/web2c/texmf.cnf" 1662627122 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/xander/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1680772022 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
   "/home/xander/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1663241504 3308 eee81981029f67083258db36df06e523 ""
@@ -290,23 +290,25 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1663238977 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1663239000 2801352 421a80a8346bdd9c4a4f40a868f01ee1 ""
-  "00-title.aux" 1685012937 4195 be13bdbdd53ac2cd1b66de6c2f9f2f8d "pdflatex"
+  "00-title.aux" 1685014044 4195 be13bdbdd53ac2cd1b66de6c2f9f2f8d "pdflatex"
   "00-title.tex" 1685011599 3284 6387f61a9584b4c7da86e0c9c938819e ""
   "assets/bmstu-logo.png" 1684740930 249096 f2a4157a2f7ea62a6d8c1bbd4133e723 ""
   "assets/lab06-do_open.drawio.png" 1685012870 703252 a227d440fef1213c5515b63e6d8eaffe ""
   "assets/open-alloc_fd.drawio.png" 1685011465 514955 7b012f677d56b9f19c2b03bbfb970b0c ""
   "assets/open-build_open_flags.drawio.png" 1685011445 537795 c48552f49d0c153485ba03e939a9d20c ""
+  "assets/open-do_filp_open.drawio.png" 1685011498 490356 f69c6ca3a6eef2e1f5b56ca489c4a98a ""
   "assets/open-getname_flags.drawio.png" 1685011456 500608 0eb8f42538ef153514518f881eefdc8a ""
   "assets/open-lookup_open.drawio.png" 1685011509 505336 14b7ec2acb0e906dd352d6176794434b ""
   "assets/open-open.drawio.png" 1685011424 581008 151e2e011044559249828d148714d044 ""
+  "assets/open-open_last_lookups.drawio.png" 1685014041 562072 ff737cbc3794dbaf10252c2ef6b54774 ""
   "assets/open-path_openat.drawio.png" 1685011477 526334 66e3ad1918280cfa7411738805a931e4 ""
-  "assets/open-set_nameidata.drawio.png" 1685011520 477228 52d9420fc959a7ef4990130223f403f1 ""
-  "content.aux" 1685012938 6197 68f92f4346f8742a859308b42333fa06 "pdflatex"
-  "content.tex" 1685012935 2707 f7217509acb1996b700817b1d1bf654f ""
-  "main-page.aux" 1685012938 1195 cec5f66f2d7c7c7afa0df3537b972c73 "pdflatex"
-  "main-page.bbl" 1685012893 466 ee04f40f768daeed26442158e95aba61 "biber main-page"
-  "main-page.out" 1685012937 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main-page.run.xml" 1685012938 2368 c99cf4df6cdea51362170fa7790cf0e7 "pdflatex"
+  "assets/open-set_nameidata.drawio.png" 1685013571 506907 fcfa752120d966d0cef52d8c8933309a ""
+  "content.aux" 1685014044 6797 03d1ed878ae1af4e6858b0459851ce11 "pdflatex"
+  "content.tex" 1685013916 3943 6d0fa22ef673c18006d79833a0f0f58a ""
+  "main-page.aux" 1685014044 1195 a7ebe6bdec668247e01e88709af39266 "pdflatex"
+  "main-page.bbl" 1685013765 466 ee04f40f768daeed26442158e95aba61 "biber main-page"
+  "main-page.out" 1685014043 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main-page.run.xml" 1685014044 2368 c99cf4df6cdea51362170fa7790cf0e7 "pdflatex"
   "main-page.tex" 1684740930 126 315596000055acbd5e73dfe81d6ca2c1 ""
   "preambule.inc.tex" 1684740930 6336 db84d38267415255e0d926e56b47bae6 ""
   (generated)
