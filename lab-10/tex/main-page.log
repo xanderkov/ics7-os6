@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.15)  30 MAY 2023 12:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.15)  25 MAY 2023 14:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1594,16 +1594,99 @@ Overfull \hbox (23.71925pt too wide) in paragraph at lines 57--60
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./assets/bmstu-logo.png>])
 \openout2 = `content.aux'.
 
- (./content.tex) [2
+ (./content.tex
+<assets/open-open.drawio.png, id=25, 811.03pt x 1245.65375pt>
+File: assets/open-open.drawio.png Graphic file (type png)
+<use assets/open-open.drawio.png>
+Package pdftex.def Info: assets/open-open.drawio.png  used on input line 51.
+(pdftex.def)             Requested size: 405.514pt x 622.82535pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--53
+
+ []
+
+[2
 
 
 
 
 ]
+<assets/open-build_open_flags.drawio.png, id=76, 675.52374pt x 1175.39125pt>
+File: assets/open-build_open_flags.drawio.png Graphic file (type png)
+<use assets/open-build_open_flags.drawio.png>
+Package pdftex.def Info: assets/open-build_open_flags.drawio.png  used on input line 57.
+(pdftex.def)             Requested size: 405.31737pt x 705.2402pt.
+ [3 <./assets/open-open.drawio.png>]
+Overfull \vbox (1.00427pt too high) has occurred while \output is active []
 
-Package caption Warning: Unused \captionsetup[figure] on input line 29.
-See the caption package documentation for explanation.
+ [4 <./assets/open-build_open_flags.drawio.png>]
+<assets/open-getname_flags.drawio.png, id=89, 683.55376pt x 594.22pt>
+File: assets/open-getname_flags.drawio.png Graphic file (type png)
+<use assets/open-getname_flags.drawio.png>
+Package pdftex.def Info: assets/open-getname_flags.drawio.png  used on input line 63.
+(pdftex.def)             Requested size: 478.48438pt x 415.95117pt.
 
+Overfull \hbox (9.01382pt too wide) in paragraph at lines 63--64
+ [][] 
+ []
+
+<assets/open-alloc_fd.drawio.png, id=90, 962.59625pt x 806.01125pt>
+File: assets/open-alloc_fd.drawio.png Graphic file (type png)
+<use assets/open-alloc_fd.drawio.png>
+Package pdftex.def Info: assets/open-alloc_fd.drawio.png  used on input line 69.
+(pdftex.def)             Requested size: 452.4203pt x 378.82533pt.
+[5 <./assets/open-getname_flags.drawio.png>]
+<assets/open-path_openat.drawio.png, id=97, 680.5425pt x 908.39375pt>
+File: assets/open-path_openat.drawio.png Graphic file (type png)
+<use assets/open-path_openat.drawio.png>
+Package pdftex.def Info: assets/open-path_openat.drawio.png  used on input line 75.
+(pdftex.def)             Requested size: 408.32864pt x 545.04047pt.
+ [6 <./assets/open-alloc_fd.drawio.png>]
+<assets/open-do_filp_open.drawio.png, id=104, 495.8525pt x 723.70375pt>
+File: assets/open-do_filp_open.drawio.png Graphic file (type png)
+<use assets/open-do_filp_open.drawio.png>
+Package pdftex.def Info: assets/open-do_filp_open.drawio.png  used on input line 81.
+(pdftex.def)             Requested size: 396.68254pt x 578.96379pt.
+ [7 <./assets/open-path_openat.drawio.png>]
+<assets/open-set_nameidata.drawio.png, id=112, 568.1225pt x 563.10374pt>
+File: assets/open-set_nameidata.drawio.png Graphic file (type png)
+<use assets/open-set_nameidata.drawio.png>
+Package pdftex.def Info: assets/open-set_nameidata.drawio.png  used on input line 87.
+(pdftex.def)             Requested size: 454.4986pt x 450.48361pt.
+ [8 <./assets/open-do_filp_open.drawio.png>]
+<assets/open-lookup_open.drawio.png, id=119, 547.04375pt x 948.54375pt>
+File: assets/open-lookup_open.drawio.png Graphic file (type png)
+<use assets/open-lookup_open.drawio.png>
+Package pdftex.def Info: assets/open-lookup_open.drawio.png  used on input line 104.
+(pdftex.def)             Requested size: 328.22878pt x 569.13065pt.
+ [9 <./assets/open-set_nameidata.drawio.png>]
+<assets/lab06-do_open.drawio.png, id=126, 831.105pt x 832.10875pt>
+File: assets/lab06-do_open.drawio.png Graphic file (type png)
+<use assets/lab06-do_open.drawio.png>
+Package pdftex.def Info: assets/lab06-do_open.drawio.png  used on input line 110.
+(pdftex.def)             Requested size: 498.66684pt x 499.2691pt.
+
+Overfull \hbox (29.19629pt too wide) in paragraph at lines 110--111
+ [][] 
+ []
+
+[10 <./assets/open-lookup_open.drawio.png>]
+File: assets/open-lookup_open.drawio.png Graphic file (type png)
+<use assets/open-lookup_open.drawio.png>
+Package pdftex.def Info: assets/open-lookup_open.drawio.png  used on input line 116.
+(pdftex.def)             Requested size: 355.57422pt x 616.54613pt.
+ [11 <./assets/lab06-do_open.drawio.png>]
+<assets/open-open_last_lookups.drawio.png, id=139, 1046.91125pt x 824.07875pt>
+File: assets/open-open_last_lookups.drawio.png Graphic file (type png)
+<use assets/open-open_last_lookups.drawio.png>
+Package pdftex.def Info: assets/open-open_last_lookups.drawio.png  used on input line 122.
+(pdftex.def)             Requested size: 492.04836pt x 387.31706pt.
+
+Overfull \hbox (22.5778pt too wide) in paragraph at lines 122--123
+ [][] 
+ []
+
+) [12] [13 <./assets/open-open_last_lookups.drawio.png>]
 
 Package caption Warning: Unused \captionsetup[subtable] on input line 30.
 See the caption package documentation for explanation.
@@ -1620,18 +1703,18 @@ Package logreq Info: Writing requests to 'main-page.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48111 strings out of 478287
- 1072457 string characters out of 5849289
- 2154873 words of memory out of 5000000
- 65533 multiletter control sequences out of 15000+600000
- 482988 words of font info for 58 fonts, out of 8000000 for 9000
+ 49205 strings out of 478287
+ 1085686 string characters out of 5849289
+ 2324878 words of memory out of 5000000
+ 66547 multiletter control sequences out of 15000+600000
+ 485741 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 110i,7n,110p,10676b,1714s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfcc2986.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc2074.pfb>
-Output written on main-page.pdf (2 pages, 270673 bytes).
+ 110i,8n,110p,10676b,1786s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc2986.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc2074.pfb>
+Output written on main-page.pdf (13 pages, 880696 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
- 42 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 202 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 92 words of extra memory for PDF output out of 10000 (max. 10000000)
 
