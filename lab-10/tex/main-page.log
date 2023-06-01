@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.15)  1 JUN 2023 14:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.15)  1 JUN 2023 15:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1604,86 +1604,54 @@ Overfull \hbox (23.71925pt too wide) in paragraph at lines 57--60
 
 
 
-]
-<assets/p_1.png, id=72, 530.98375pt x 50.1875pt>
-File: assets/p_1.png Graphic file (type png)
-<use assets/p_1.png>
-Package pdftex.def Info: assets/p_1.png  used on input line 79.
-(pdftex.def)             Requested size: 424.78757pt x 40.15004pt.
- [3 <./assets/p_1.png>]
-<assets/p_1_thread.png, id=111, 516.93124pt x 54.2025pt>
-File: assets/p_1_thread.png Graphic file (type png)
-<use assets/p_1_thread.png>
-Package pdftex.def Info: assets/p_1_thread.png  used on input line 131.
-(pdftex.def)             Requested size: 413.54555pt x 43.36205pt.
- [4 <./assets/p_1_thread.png>]
-<assets/d_1.png, id=162, 1095.09125pt x 474.77374pt>
+] [3] [4]
+<assets/d_1.png, id=156, 1095.09125pt x 474.77374pt>
 File: assets/d_1.png Graphic file (type png)
 <use assets/d_1.png>
-Package pdftex.def Info: assets/d_1.png  used on input line 146.
+Package pdftex.def Info: assets/d_1.png  used on input line 141.
 (pdftex.def)             Requested size: 547.54428pt x 237.38629pt.
 
-Overfull \hbox (35.39459pt too wide) in paragraph at lines 146--147
+Overfull \hbox (35.39459pt too wide) in paragraph at lines 141--142
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
-[5 <./assets/d_1.png>]
-<assets/p_2.png, id=169, 523.9575pt x 41.15375pt>
-File: assets/p_2.png Graphic file (type png)
-<use assets/p_2.png>
-Package pdftex.def Info: assets/p_2.png  used on input line 173.
-(pdftex.def)             Requested size: 419.16656pt x 32.92303pt.
- [6 <./assets/p_2.png>]
-<assets/p_2_thread.png, id=212, 523.9575pt x 50.1875pt>
-File: assets/p_2_thread.png Graphic file (type png)
-<use assets/p_2_thread.png>
-Package pdftex.def Info: assets/p_2_thread.png  used on input line 230.
-(pdftex.def)             Requested size: 419.16656pt x 40.15004pt.
- [7 <./assets/p_2_thread.png>]
-<assets/d_2.png, id=251, 663.47874pt x 576.1525pt>
+[5 <./assets/d_1.png>] [6]
+Overfull \hbox (39.51947pt too wide) in paragraph at lines 220--222
+\T2A/cmr/m/n/14.4 –езультат ра-бо-ты про-грам-мы: abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz% 
+ []
+
+<assets/d_2.png, id=206, 663.47874pt x 576.1525pt>
 File: assets/d_2.png Graphic file (type png)
 <use assets/d_2.png>
-Package pdftex.def Info: assets/d_2.png  used on input line 239.
-(pdftex.def)             Requested size: 464.43195pt x 403.30399pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--248
+Package pdftex.def Info: assets/d_2.png  used on input line 229.
+(pdftex.def)             Requested size: 431.25607pt x 374.49467pt.
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 233--237
 
  []
 
-[8 <./assets/d_2.png>]
-<assets/p_3.png, id=264, 570.13pt x 90.3375pt>
-File: assets/p_3.png Graphic file (type png)
-<use assets/p_3.png>
-Package pdftex.def Info: assets/p_3.png  used on input line 267.
-(pdftex.def)             Requested size: 456.10463pt x 72.27008pt.
- [9 <./assets/p_3.png>]
-<assets/d_3_thread.png, id=284, 573.14125pt x 152.57pt>
-File: assets/d_3_thread.png Graphic file (type png)
-<use assets/d_3_thread.png>
-Package pdftex.def Info: assets/d_3_thread.png  used on input line 326.
-(pdftex.def)             Requested size: 458.51363pt x 122.05615pt.
- [10]
-<assets/d_3.png, id=333, 970.62625pt x 576.1525pt>
+[8 <./assets/d_2.png>] [9] [10]
+<assets/d_3.png, id=316, 970.62625pt x 576.1525pt>
 File: assets/d_3.png Graphic file (type png)
 <use assets/d_3.png>
-Package pdftex.def Info: assets/d_3.png  used on input line 332.
+Package pdftex.def Info: assets/d_3.png  used on input line 324.
 (pdftex.def)             Requested size: 533.84608pt x 316.88484pt.
 
-Overfull \hbox (21.6964pt too wide) in paragraph at lines 332--333
+Overfull \hbox (21.6964pt too wide) in paragraph at lines 324--325
  [][] 
  []
 
-) [11 <./assets/d_3_thread.png> <./assets/d_3.png>]
+) [11 <./assets/d_3.png>]
 
 Package caption Warning: Unused \captionsetup[subtable] on input line 30.
 See the caption package documentation for explanation.
@@ -1700,18 +1668,18 @@ Package logreq Info: Writing requests to 'main-page.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49517 strings out of 478287
- 1088517 string characters out of 5849289
+ 49468 strings out of 478287
+ 1087527 string characters out of 5849289
  2489883 words of memory out of 5000000
- 66660 multiletter control sequences out of 15000+600000
+ 66624 multiletter control sequences out of 15000+600000
  488218 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,8n,110p,10676b,1912s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc2986.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc2074.pfb>
-Output written on main-page.pdf (11 pages, 557992 bytes).
+Output written on main-page.pdf (11 pages, 514558 bytes).
 PDF statistics:
- 442 PDF objects out of 1000 (max. 8388607)
- 386 compressed objects within 4 object streams
- 259 named destinations out of 1000 (max. 500000)
- 87 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 420 PDF objects out of 1000 (max. 8388607)
+ 376 compressed objects within 4 object streams
+ 252 named destinations out of 1000 (max. 500000)
+ 57 words of extra memory for PDF output out of 10000 (max. 10000000)
 

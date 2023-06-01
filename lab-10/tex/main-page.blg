@@ -1,9 +1,9 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'main-page.blg'
-[67] biber:340> INFO - === Чт июн  1, 2023, 14:35:13
-[80] Biber.pm:418> INFO - Reading 'main-page.bcf'
-[144] Biber.pm:972> INFO - Found 0 citekeys in bib section 0
-[157] bbl.pm:654> INFO - Writing 'main-page.bbl' with encoding 'UTF-8'
-[157] bbl.pm:757> INFO - Output to main-page.bbl
-[157] Biber.pm:130> WARN - The file 'main-page.bcf' does not contain any citations!
-[157] Biber.pm:132> INFO - WARNINGS: 1
+[58] biber:340> INFO - === Чт июн  1, 2023, 15:08:08
+[69] Biber.pm:418> INFO - Reading 'main-page.bcf'
+[124] Biber.pm:972> INFO - Found 0 citekeys in bib section 0
+[134] bbl.pm:654> INFO - Writing 'main-page.bbl' with encoding 'UTF-8'
+[134] bbl.pm:757> INFO - Output to main-page.bbl
+[135] Biber.pm:130> WARN - The file 'main-page.bcf' does not contain any citations!
+[135] Biber.pm:132> INFO - WARNINGS: 1

@@ -74,10 +74,7 @@ int main() {
 }
 \end{lstlisting}
 Результат работы программы:
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.8]{assets/p_1.png}
-\end{figure}
+aubvcwdxeyfzghijklmnopqrst\%
 
 Программа с дополнительным потоком:\newpage
 \begin{lstlisting}
@@ -126,11 +123,9 @@ int main(void) {
 \end{lstlisting}
 
 Результат работы программы:
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.8]{assets/p_1_thread.png}
-\end{figure}
+abcdefghijklmnopqrstuvwxyz\%
 
+\newpage
 С помощью системного вызова open() создается дескриптор открытого только для чтения файла. Системный вызов open() возвращает индекс в массиве fd структуры files\_struct. fdopen() создает экземпляры структуры типа FILE(fs1 и fs2), которые ссылаются на дескриптор, созданный системным вызовом open.
 Далее создаются буферы  buff1 и buff2 размером 20 байт. Для дескрипторов fs1 и fs2 помощью setbuv задаются соответствующие буферы и тип буферизации \_IOFBF(полная буферизация).
 
@@ -168,10 +163,8 @@ int main() {
 }
 \end{lstlisting}
 Результат работы программы:
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.8]{assets/p_2.png}
-\end{figure}
+
+aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz\%
 
 Программа с дополнительным потоком:
 \begin{lstlisting}
@@ -225,10 +218,7 @@ int main() {
 }
 \end{lstlisting}
 Результат работы программы:
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.8]{assets/p_2_thread.png}
-\end{figure}
+abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\%
 
 В программе один и тот же файл открыт 2 раза для чтения.  При вызове системного вызова open() создается дескриптор файла в системной таблице файлов, открытых процессом и запись в системной таблице открытых  файлов.  Так как в данном случае файл открывается 2 раза, то в таблице открытых процессом файлов будет 2 дескриптора и каждый такой дескриптор имеет собственный f\_pos. По этой причине чтение становится независимым --  при вызове read() для обоих дескрипторов по очереди, оба указателя проходят по всем позициям файла, и каждый символ считывается и выводится по два раза. 
 Несмотря на то, что существует 2 дескриптора открытого файла, открывается один и тот же файл, т.е. inode один и тот же.
@@ -236,7 +226,7 @@ int main() {
 Связь структур:
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{assets/d_2.png}
+	\includegraphics[scale=0.65]{assets/d_2.png}
 \end{figure}
 
 
@@ -244,7 +234,6 @@ int main() {
 \textsc{\huge Программа №3} \\
 ~\newline
 Написать программу, которая открывает один и тот же файл два раза с использованием библиотечной функции fopen(). Для этого объявляются два файловых дескриптора. В цикле записать в файл буквы латинского алфавита поочередно передавая функции fprintf() то первый дескриптор, то – второй.
-Результат прокомментировать.
 
 \begin{lstlisting}
 #include <fcntl.h>
@@ -253,19 +242,16 @@ int main() {
 int main() {
   FILE *f1 = fopen("out.txt", "w");
   FILE *f2 = fopen("out.txt", "w");
-  for (char letr = 'a'; letr < '{'; letr++) {
+  for (char letr = 'a'; letr < '{'; letr++)
     letr % 2 ? fprintf(f1, "%c", letr) : fprintf(f2, "%c", letr);
-  }
   fclose(f2);
   fclose(f1);
   return 0;
 }
 \end{lstlisting}
 Результат работы программы:
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.8]{assets/p_3.png}
-\end{figure}
+\textbf{acegikmoqsuwy\%}
+
 Файл out.txt открывается функцией fopen() на запись дважды. Создается два дескриптора открытых файлов, две независимые позиции, но с одним и тем же inode. Функция fprintf() (функция записи в файл) самостоятельно создаёт буфер, в который заносимая в файл информация первоначально и помещается. Из буфера информация переписывается в результате трех действий:
 \begin{enumerate}
 	\item Информация из буфера записывается в файл когда буфер полон. В этом случае содержимое буфера автоматически переписывается в файл.
@@ -321,10 +307,16 @@ int main() {
 }
 \end{lstlisting}
 Результат работы программы:
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.8]{assets/d_3_thread.png}
-\end{figure}
+
+open for fs1: inode  = 4889255, buffsize = 13 blocksize= 4096
+
+open for fs2: inode  = 4889255, buffsize = 13 blocksize= 4096
+
+close for fs2: inode  = 4889255, buffsize = 26 blocksize= 4096
+
+close for fs2: inode  = 4889255, buffsize = 39 blocksize= 4096
+
+acegikmoqsuwyacegikmoqsuwyacegikmoqsuwy\%
 
 Связь структур:
 \begin{figure}[H]
