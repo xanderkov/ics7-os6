@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber main-page"] 1685621288 "main-page.bcf" "main-page.bbl" "main-page" 1685621626
-  "main-page.bcf" 1685621626 105727 9905a3b73767b2718fa4474b0c63857a "pdflatex"
+["biber main-page"] 1685621288 "main-page.bcf" "main-page.bbl" "main-page" 1685690466
+  "main-page.bcf" 1685690466 105727 9905a3b73767b2718fa4474b0c63857a "pdflatex"
   (generated)
   "main-page.bbl"
   "main-page.blg"
-["pdflatex"] 1685621624 "/home/xander/Documents/bmstu/ics7-os6/lab-10/tex/main-page.tex" "main-page.pdf" "main-page" 1685621626
+["pdflatex"] 1685690464 "/home/xander/Documents/bmstu/ics7-os6/lab-10/tex/main-page.tex" "main-page.pdf" "main-page" 1685690466
   "/etc/texmf/web2c/texmf.cnf" 1662627122 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/xander/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1680772022 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
   "/home/xander/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1663241504 3308 eee81981029f67083258db36df06e523 ""
@@ -295,19 +295,19 @@
   "/usr/share/texmf/fonts/type1/public/cm-super/sfxc2074.pfb" 1663238970 111780 2ef6e82d3eb96cb57d45eda5482f6aac ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1663238977 4379155 98693266ff65f58d9f98aff394de12d2 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1663239000 2801352 421a80a8346bdd9c4a4f40a868f01ee1 ""
-  "00-title.aux" 1685621626 4195 be13bdbdd53ac2cd1b66de6c2f9f2f8d "pdflatex"
-  "00-title.tex" 1685618799 3333 91aafee78525fb76b30906b3225157b2 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1685690261 2801333 ff84cc27e4748290125546f3205046d2 ""
+  "00-title.aux" 1685690466 4195 be13bdbdd53ac2cd1b66de6c2f9f2f8d "pdflatex"
+  "00-title.tex" 1685690463 3291 470ffba7b7edb8b46a0d811b1956010e ""
   "assets/bmstu-logo.png" 1684740930 249096 f2a4157a2f7ea62a6d8c1bbd4133e723 ""
   "assets/d_1.png" 1684740930 48237 c926ec42a54b0094f67e03615c1e17c1 ""
   "assets/d_2.png" 1684740930 39919 27b8dd141859f997455ef71aee4876f8 ""
   "assets/d_3.png" 1684740930 58503 f2bb29405db7e15ea6710380353b36e2 ""
-  "content.aux" 1685621626 4196 2b556ee563dbb0b4e125aa5ab39d685e "pdflatex"
+  "content.aux" 1685690466 4196 2b556ee563dbb0b4e125aa5ab39d685e "pdflatex"
   "content.tex" 1685621622 13083 2bbb88b65a921743c72156dee53ab86e ""
-  "main-page.aux" 1685621626 1195 acebe799803974ae5bfd6f21b05b604e "pdflatex"
+  "main-page.aux" 1685690466 1195 acebe799803974ae5bfd6f21b05b604e "pdflatex"
   "main-page.bbl" 1685621288 466 ee04f40f768daeed26442158e95aba61 "biber main-page"
-  "main-page.out" 1685621625 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main-page.run.xml" 1685621626 2368 c99cf4df6cdea51362170fa7790cf0e7 "pdflatex"
+  "main-page.out" 1685690465 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main-page.run.xml" 1685690466 2368 c99cf4df6cdea51362170fa7790cf0e7 "pdflatex"
   "main-page.tex" 1684740930 126 315596000055acbd5e73dfe81d6ca2c1 ""
   "preambule.inc.tex" 1685619362 6336 b5db6c351aa08340f236acbe03e2520a ""
   (generated)
