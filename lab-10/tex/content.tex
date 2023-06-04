@@ -126,19 +126,33 @@ int main(void) {
 abcdefghijklmnopqrstuvwxyz\%
 
 \newpage
-С помощью системного вызова open() создается дескриптор открытого только для чтения файла. Системный вызов open() возвращает индекс в массиве fd структуры files\_struct. fdopen() создает экземпляры структуры типа FILE(fs1 и fs2), которые ссылаются на дескриптор, созданный системным вызовом open.
-Далее создаются буферы  buff1 и buff2 размером 20 байт. Для дескрипторов fs1 и fs2 помощью setbuv задаются соответствующие буферы и тип буферизации \_IOFBF(полная буферизация).
+С помощью системного вызова open() создается дескриптор открытого только для
+чтения файла. Системный вызов open() возвращает индекс в массиве fd структуры
+files\_struct. fdopen() создает экземпляры структуры типа FILE(fs1 и fs2),
+которые ссылаются на дескриптор, созданный системным вызовом open.
+Далее создаются буферы	buff1 и buff2 размером 20 байт. Для дескрипторов fs1 и
+fs2 помощью setbuv задаются соответствующие буферы и тип буферизации
+\_IOFBF(полная буферизация).
 
-Далее fscanf() выполняется в цикле поочерёдно для fs1 и  fs2. Так как установлена полная буферизация, то при первом вызове fscanf() буфер будет заполнен полностью либо вплоть до конца файла, а f\_pos установится на следующий за последним записанным в буфер символ.
+Далее fscanf() выполняется в цикле поочерёдно для fs1 и  fs2. Так как
+установлена полная буферизация, то при первом вызове fscanf() буфер будет
+заполнен полностью либо вплоть до конца файла, а f\_pos установится на
+следующий за последним записанным в буфер символ.
 
-При первом вызове fscanf(fs1,"\%c",\&c); в буфер buff1 считаются первые 20 символов (abcdefghijklmnopqrst), в переменную c записывается, а затем выводится с помощью fprintf, символ 'a'. При первом вызове fscanf(fs2,"\%c",\&c);, в буфер buff2 считываются оставшиеся в файле символы – uvwxyz (в переменную с записывается символ 'u').  
+При первом вызове fscanf(fs1,"\%c",\&c); в буфер buff1 считаются первые 20
+символов (abcdefghijklmnopqrst), в переменную c записывается, а затем выводится
+с помощью fprintf, символ 'a'. При первом вызове fscanf(fs2,"\%c",\&c);, в
+буфер buff2 считываются оставшиеся в файле символы – uvwxyz (в переменную с
+записывается символ 'u').
 
-Внутри цикла будут поочередно выводится символы из buff1 и buff2 до тех пор, пока символы в одном из буферов не закончатся. Тогда на экран будут последовательно выведены оставшиеся символы из другого буфера. 
+Внутри цикла будут поочередно выводится символы из buff1 и buff2 до тех пор,
+пока символы в одном из буферов не закончатся. Тогда на экран будут
+последовательно выведены оставшиеся символы из другого буфера.
 
 Связь структур:
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{assets/d_1.png}
+  \centering
+  \includegraphics[scale=0.5]{assets/d_1.png}
 \end{figure}
 
 ~\newline
@@ -220,20 +234,30 @@ int main() {
 Результат работы программы:
 abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\%
 
-В программе один и тот же файл открыт 2 раза для чтения.  При вызове системного вызова open() создается дескриптор файла в системной таблице файлов, открытых процессом и запись в системной таблице открытых  файлов.  Так как в данном случае файл открывается 2 раза, то в таблице открытых процессом файлов будет 2 дескриптора и каждый такой дескриптор имеет собственный f\_pos. По этой причине чтение становится независимым --  при вызове read() для обоих дескрипторов по очереди, оба указателя проходят по всем позициям файла, и каждый символ считывается и выводится по два раза. 
-Несмотря на то, что существует 2 дескриптора открытого файла, открывается один и тот же файл, т.е. inode один и тот же.
+В программе один и тот же файл открыт 2 раза для чтения.  При вызове системного
+вызова open() создается дескриптор файла в системной таблице файлов, открытых
+процессом и запись в системной таблице открытых  файлов.  Так как в данном
+случае файл открывается 2 раза, то в таблице открытых процессом файлов будет 2
+дескриптора и каждый такой дескриптор имеет собственный f\_pos. По этой причине
+чтение становится независимым --  при вызове read() для обоих дескрипторов по
+очереди, оба указателя проходят по всем позициям файла, и каждый символ
+считывается и выводится по два раза.
+Несмотря на то, что существует 2 дескриптора открытого файла, открывается один
+и тот же файл, т.е. inode один и тот же.
 
 Связь структур:
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.65]{assets/d_2.png}
+  \centering
+  \includegraphics[scale=0.65]{assets/d_2.png}
 \end{figure}
-
 
 ~\newline
 \textsc{\huge Программа №3} \\
 ~\newline
-Написать программу, которая открывает один и тот же файл два раза с использованием библиотечной функции fopen(). Для этого объявляются два файловых дескриптора. В цикле записать в файл буквы латинского алфавита поочередно передавая функции fprintf() то первый дескриптор, то – второй.
+Написать программу, которая открывает один и тот же файл два раза с
+использованием библиотечной функции fopen(). Для этого объявляются два файловых
+дескриптора. В цикле записать в файл буквы латинского алфавита поочередно
+передавая функции fprintf() то первый дескриптор, то – второй.
 
 \begin{lstlisting}
 #include <fcntl.h>
@@ -252,74 +276,155 @@ int main() {
 Результат работы программы:
 \textbf{acegikmoqsuwy\%}
 
-Файл out.txt открывается функцией fopen() на запись дважды. Создается два дескриптора открытых файлов, две независимые позиции, но с одним и тем же inode. Функция fprintf() (функция записи в файл) самостоятельно создаёт буфер, в который заносимая в файл информация первоначально и помещается. Из буфера информация переписывается в результате трех действий:
+Файл out.txt открывается функцией fopen() на запись дважды. Создается два
+дескриптора открытых файлов, две независимые позиции, но с одним и тем же
+inode. Функция fprintf() (функция записи в файл) самостоятельно создаёт буфер,
+в который заносимая в файл информация первоначально и помещается. Из буфера
+информация переписывается в результате трех действий:
 \begin{enumerate}
-	\item Информация из буфера записывается в файл когда буфер полон. В этом случае содержимое буфера автоматически переписывается в файл.
-	\item Если вызван fflush - принудительная запись содержимого в файл.
-	\item Если вызван fclose.
+  \item Информация из буфера записывается в файл когда буфер полон. В
+        этом случае содержимое буфера автоматически переписывается в файл.
+  \item Если вызван fflush - принудительная запись содержимого в файл.
+  \item Если вызван fclose.
 \end{enumerate}
-В данном случае запись в файл происходит в результате вызова функции fclose. При вызове fclose() для fs1 буфер для fs1 записывается в файл. При вызове fclose() для fs2, все содержимое файла очищается, а в файл записывается содержимое буфера для fs2. В итоге произошла утеря данных, в файле окажется только содержимое буфера для fs2. \\
-\textbf{Решение.} Необходимо использовать open() с флагом O\_APPEND. Если этот флаг установлен, то каждой операции добавления гарантируется неделимость. \\
+В данном случае запись в файл происходит в результате вызова функции fclose.
+При вызове fclose() для fs1 буфер для fs1 записывается в файл. При вызове
+fclose() для fs2, все содержимое файла очищается, а в файл записывается
+содержимое буфера для fs2. В итоге произошла утеря данных, в файле окажется
+только содержимое буфера для fs2. \\
+\textbf{Решение.} Необходимо использовать open() с флагом O\_APPEND. Если этот
+флаг установлен, то каждой операции добавления гарантируется неделимость. \\
 Программа с дополнительным потоком:\newpage
 \begin{lstlisting}
 #include <fcntl.h>
 #include <pthread.h>
 #include <stdio.h>
-#include <sys/stat.h>
 #include <unistd.h>
 
-struct stat statbuf;
 
-void *thread_routine() {
-  FILE *f2 = fopen("out.txt", "w");
-  stat("out.txt", &statbuf);
-  printf("open for fs2: inode  = %ld, buffsize = %ld blocksize= %ld\n",
-         (long int)statbuf.st_ino, (long int)statbuf.st_size,
-         (long int)statbuf.st_blksize);
-  for (char letr = 'a'; letr < '{'; letr += 2) fprintf(f2, "%c", letr);
-  fclose(f2);
-  stat("out.txt", &statbuf);
-  printf("close for fs2: inode  = %ld, buffsize = %ld blocksize= %ld\n",
-         (long int)statbuf.st_ino, (long int)statbuf.st_size,
-         (long int)statbuf.st_blksize);
+void *write_buffer(void *args)
+{
+    FILE *f = fopen("out.txt", "a");
+
+
+    for (char c = 'b'; c <= 'z'; c += 2)
+        fprintf(f, "%c", c);
+
+
+    fclose(f);
+    return NULL;
 }
 
-int main() {
-  FILE *f1 = fopen("out.txt", "w");
-  stat("out.txt", &statbuf);
-  printf("open for fs1: inode  = %ld, buffsize = %ld blocksize= %ld\n",
-         (long int)statbuf.st_ino, (long int)statbuf.st_size,
-         (long int)statbuf.st_blksize);
 
-  pthread_t thr_worker;
-  pthread_create(&thr_worker, NULL, thread_routine, f1);
-  pthread_join(thr_worker, NULL);
+int main()
+{
+    FILE *f1 = fopen("out.txt", "a");
 
-  for (char letr = 'a'; letr < '{'; letr += 2) fprintf(f1, "%c", letr);
 
-  fclose(f1);
-  stat("out.txt", &statbuf);
-  printf("close for fs2: inode  = %ld, buffsize = %ld blocksize= %ld\n",
-         (long int)statbuf.st_ino, (long int)statbuf.st_size,
-         (long int)statbuf.st_blksize);
+    pthread_t thread;
+    int rc = pthread_create(&thread, NULL, write_buffer, NULL);
 
-  return 0;
+
+    for (char c = 'a'; c <= 'z'; c += 2)
+        fprintf(f1, "%c", c);
+
+
+    pthread_join(thread, NULL);
+    fclose(f1);
+
+
+    return 0;
 }
+  
 \end{lstlisting}
 Результат работы программы:
-
-open for fs1: inode  = 4889255, buffsize = 13 blocksize= 4096
-
-open for fs2: inode  = 4889255, buffsize = 13 blocksize= 4096
-
-close for fs2: inode  = 4889255, buffsize = 26 blocksize= 4096
-
-close for fs2: inode  = 4889255, buffsize = 39 blocksize= 4096
 
 acegikmoqsuwyacegikmoqsuwyacegikmoqsuwy\%
 
 Связь структур:
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.55]{assets/d_3.png}
+  \centering
+  \includegraphics[scale=0.55]{assets/d_3.png}
 \end{figure}
+
+
+
+Код первой программы с мьютексами:
+
+\begin{lstlisting}
+#include <stdio.h>
+#include <fcntl.h>
+#include <pthread.h>
+
+
+typedef struct thread_args
+{
+  FILE *f;
+  pthread_mutex_t *mutex;
+} thread_args_t;
+
+
+void run_thread(thread_args_t *args)
+{
+  pthread_mutex_lock(args->mutex);
+  printf("\nThread 2: ");
+  int flag = 1;
+  while (flag == 1)
+  {
+    char c;
+    flag = fscanf(args->f,"%c",&c);
+    if (flag == 1) 
+    {
+        fprintf(stdout,"%c",c);
+    }
+  }
+  pthread_mutex_unlock(args->mutex);
+}
+
+
+int main()
+{
+  setbuf(stdout, NULL);
+  pthread_t thread;
+  int fd = open("alphabet.txt",O_RDONLY);
+
+
+  FILE *fs1 = fdopen(fd,"r");
+  char buff1[20];
+  setvbuf(fs1,buff1,_IOFBF,20);
+
+
+  FILE *fs2 = fdopen(fd,"r");
+  char buff2[20];
+  setvbuf(fs2,buff2,_IOFBF,20);
+
+
+  pthread_mutex_t mutex;
+  pthread_mutex_init(&mutex, NULL);
+
+
+  thread_args_t args;
+  args.f = fs2;
+  args.mutex = &mutex;
+  pthread_create(&thread, NULL, run_thread, &args);
+  
+  pthread_mutex_lock(&mutex);
+  printf("Thread 1: ");
+  int flag = 1;
+  while(flag == 1)
+  {
+    char c;
+    flag = fscanf(fs1,"%c",&c);
+    if (flag == 1) 
+    {
+        fprintf(stdout,"%c",c);
+    }
+  }
+  pthread_mutex_unlock(&mutex);
+  pthread_join(thread, NULL);
+  pthread_mutex_destroy(&mutex);
+  return 0;
+}
+  
+    
+\end{lstlisting}
