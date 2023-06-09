@@ -72,25 +72,26 @@ irqreturn_t my_irq_handler(int irq, void *dev)
 static int __init my_workqueue_init(void)
 {
     int ret;
-    printk(KERN_INFO "MyWorkQueue: init");
+    
 
     ret = request_irq(keyboard_irq, my_irq_handler, IRQF_SHARED,
                       "test_my_irq_handler", (void *) my_irq_handler);
 
+    printk(KERN_INFO "MyWorkQueue: init");
     if (ret)
     {
         printk(KERN_ERR "MyWorkQueue: request_irq error");
-        destroy_workqueue(my_wq);
-        kfree(work1);
-        kfree(work2);
+        return ret;
     }
     else
-        my_wq = create_workqueue("my_wq");
+    {
+        my_wq = alloc_workqueue("%s", __WQ_LEGACY | WQ_MEM_RECLAIM, 1, "my_wq");
 
         if (my_wq == NULL)
         {
             printk(KERN_ERR "MyWorkQueue: create queue error");
-            return -1;
+            ret = GFP_NOIO;
+            return ret;
         }
 
         work1 = kmalloc(sizeof(my_work_struct_t), GFP_KERNEL);
@@ -98,7 +99,8 @@ static int __init my_workqueue_init(void)
         {
             printk(KERN_ERR "MyWorkQueue: work1 alloc error");
             destroy_workqueue(my_wq);
-            return -1;
+            ret = GFP_NOIO;
+            return ret;
         }
 
         work2 = kmalloc(sizeof(struct work_struct), GFP_KERNEL);
@@ -107,15 +109,15 @@ static int __init my_workqueue_init(void)
             printk(KERN_ERR "MyWorkQueue: work2 alloc error");
             destroy_workqueue(my_wq);
             kfree(work1);
-            return -1;
+            ret = GFP_NOIO;
+            return ret;
         }
 
-        // Макрос INIT_WORK используется, когда создаем структуру динамически
         INIT_WORK((struct work_struct *)work1, work1_func);
         INIT_WORK(work2, work2_func);
-            printk(KERN_ERR "MyWorkQueue: loaded");
-
-        return ret;
+        printk(KERN_ERR "MyWorkQueue: loaded");
+    }
+    return ret;
 }
 
 static void __exit my_workqueue_exit(void)
